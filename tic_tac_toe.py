@@ -338,8 +338,8 @@ if __name__ == "__main__":
                    metrics=['accuracy'])
 
     # If you want to continue training from a previous model, just uncomment the lines below
-    # model1.load_weights("modelO-test.h5")
-    # model2.load_weights("modelX-test.h5")
+    # model1.load_weights("modelO.h5")
+    # model2.load_weights("modelX.h5")
 
     # Define environment/game
     env = Tic_Tac_Toe(grid_size)
