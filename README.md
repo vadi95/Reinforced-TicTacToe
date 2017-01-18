@@ -2,8 +2,8 @@
 Two Neural Nets learn how to play TicTacToe
 
 <h1>Requirements</h1>
-Keras (with tf/theano backend)
-numpy
+keras (with tf/theano backend)<br>
+numpy<br>
 
 <h1> Policy Gradient </h1>
 In this approach you play random games (both players make random moves), and say if player 'O' wins you reward all 'O' moves positively (reduced by a discount factor i.e. the final move gets the full reward and then reward decreases by a factor) and reward 'X' moves negatively in the same fashion. If the game results in a draw we can reward both players with a lesser positive reward (again discounted by a factor).<br><br>
