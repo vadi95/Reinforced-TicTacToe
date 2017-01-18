@@ -362,7 +362,7 @@ if __name__ == "__main__":
 
         prev_state = input_t
         prev_action = 0
-        curr_game = []
+
         while not game_over:
             input_tm1 = input_t
             possible_actions = []
@@ -370,8 +370,6 @@ if __name__ == "__main__":
                 possible_actions = [i for i, e in enumerate(learnt_actions[encode_state(input_tm1[0])]) if e == 0]
             if not possible_actions:
                 possible_actions = list(np.where(input_tm1[0] == 0)[0])
-            rewardO = 0
-            rewardX = 0
 
             if env.state.count(1) == env.state.count(-1):
                 player = 'O'
